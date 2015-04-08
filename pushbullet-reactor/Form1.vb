@@ -22,7 +22,7 @@ Public Class Form1
             Dim webClient As New System.Net.WebClient
 
             webClient.Headers("Authorization") = "Bearer ********************************"
-            Dim result As String = webClient.DownloadString("https://api.pushbullet.com/v2/pushes")
+            Dim result As String = webClient.DownloadString("https://api.pushbullet.com/v2/pushes?modified_after=1428461224&active=true")
             Dim deserializedProduct As Pushes = JsonConvert.DeserializeObject(Of Pushes)(result)
             Debug.Print(deserializedProduct.pushes.Count & " pushes")
             For Each push In deserializedProduct.pushes

@@ -1,4 +1,4 @@
-﻿Public Class aPush
+﻿Public Class Push
     Private _type As String
     Public Property type() As String
         Get

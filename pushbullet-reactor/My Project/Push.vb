@@ -1,4 +1,0 @@
-﻿
-Class Push
-
-End Class
