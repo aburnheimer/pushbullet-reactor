@@ -124,6 +124,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pushbullet-receiver\pushbullet-receiver.vbproj">
+      <Project>{3D22C2BC-4B3B-4DE9-8716-735F0ACC1302}</Project>
+      <Name>pushbullet-receiver</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

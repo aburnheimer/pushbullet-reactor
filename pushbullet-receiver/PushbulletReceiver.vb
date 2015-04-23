@@ -40,7 +40,7 @@ Public Class PushbulletReceiver
             Dim webClient As New System.Net.WebClient
 
             webClient.Headers("Authorization") = "Bearer " & apiKey
-            Dim result As String = webClient.DownloadString(PUSHBULLET_API_URL_STUB & "/pushes?active=true")
+            Dim result As String = webClient.DownloadString(PUSHBULLET_API_URL_STUB & "pushes?active=true")
             Dim deserializedProduct As Pushes = JsonConvert.DeserializeObject(Of Pushes)(result)
             Dim latestPush As Push
             latestPush = deserializedProduct.pushes(0)
